@@ -1,14 +1,20 @@
 package rahulshettyacademy.Tests;
 
 import java.awt.Desktop.Action;
+import java.io.File;
 import java.io.IOException;
 import java.security.PublicKey;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.activation.FileDataSource;
+
+import org.apache.commons.io.FileUtils;
 import org.checkerframework.framework.qual.FromByteCode;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -74,11 +80,22 @@ public class PlaceOrderTest extends BaseTest{
 	//all these are Test Strategy
 	//If you want to run methods in parallel use like this --><suite parallel = 'tests' name="Suite">
 	
+	public String getScreenShot(String testCaseName) throws IOException
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;//this is how you have to cast driver to take a screenshot
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		File file=new File(System.getProperty("user.dir")+ "//reports//" +testCaseName +".png");
+		FileUtils.copyFile(source, file);
+		return System.getProperty("user.dir")+ "//reports//" + testCaseName + ".png";
+		
+		//with the help of this utility we can create HTML Extent Reports
+	
+	}
 	//2nd method from DataProvider
 	@DataProvider
-	public Object[][] getData()
+	public Object[][] getData() throws IOException
 	{
-		HashMap<String, String> map = new HashMap<String, String>();
+		/*HashMap<String, String> map = new HashMap<String, String>();
 		map.put("email","sawantarchana110@gmail.com");
 		map.put("password", "Mullen@123");
 		map.put("productName", "ZARA COAT 3");
@@ -88,7 +105,15 @@ public class PlaceOrderTest extends BaseTest{
 		map1.put("password", "Mullen@123");
 		map1.put("productName", "ADIDAS ORIGINAL");
 		
-		return new Object [] [] {{map}, {map1} };
+		return new Object [] [] {{map}, {map1} };*/
+		
+		List<HashMap<String, String>> data=getJsonDataToMap(System.getProperty("user.dir") + "//src//test//java//rahulshettyacademy//data//PurchaseOrder.json");//it returns List of HashMap
+		return new Object [] [] {{data.get(0)}, {data.get(1)} };
+		
+		/**this time while running the data is driving from external json file and utilizing testNG dataProvider as an 
+		*integration to Parameterization Data Driven Testing in framework
+		*DataProvider Parameterization and HashMap Parameterization
+		*/
 		
 	}
 	//we run this in "Purchase.xml"  file, son run and check

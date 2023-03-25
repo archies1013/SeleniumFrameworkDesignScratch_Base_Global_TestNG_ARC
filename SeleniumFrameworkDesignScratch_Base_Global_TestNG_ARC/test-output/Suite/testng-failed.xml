@@ -12,7 +12,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="PlaceOrderTest" invocation-numbers="0"/>
+          <include name="PlaceOrderTest"/>
         </methods>
       </class> <!-- rahulshettyacademy.Tests.PlaceOrderTest -->
     </classes>

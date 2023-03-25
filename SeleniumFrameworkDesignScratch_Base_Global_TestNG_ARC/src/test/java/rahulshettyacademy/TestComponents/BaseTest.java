@@ -1,11 +1,17 @@
 package rahulshettyacademy.TestComponents;
 
 import org.testng.annotations.AfterMethod;
+
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +19,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.idealized.Network.UserAgent;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import rahulshettyacadamy.PageObjects.LandingPage;
@@ -56,6 +65,26 @@ public class BaseTest {
 			driver.manage().window().maximize();
 			return driver;
 		}
+	
+	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException
+	{	
+		//read Json to String
+		String jsonContent=FileUtils.readFileToString(new File(filePath),
+				StandardCharsets.UTF_8);
+		//Basically in the second argument we have to give new method in encoding format that how to convert into String, then your deprecation error will go away
+		//We have Json file in place, first up all we convert our Json file into string variable and then thst string to HashMap we converted and finally we have a
+		//list of HashMap
+		//Now we have to call our HashMap in PlaceOrderTest
+		
+		//String to HashMap  - Jackson DataBind Maven dependency helps you to convert String into HashMap
+		ObjectMapper mapper=new ObjectMapper();
+		List<HashMap<String, String>>data=mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>(){});
+		return data;
+			
+		
+	}
+	
+	
 		@BeforeMethod(alwaysRun = true)
 		public LandingPage launchApplication() throws IOException
 		{
