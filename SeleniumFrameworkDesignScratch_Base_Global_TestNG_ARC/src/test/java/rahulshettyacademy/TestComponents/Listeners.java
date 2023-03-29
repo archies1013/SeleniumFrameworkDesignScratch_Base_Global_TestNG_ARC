@@ -40,7 +40,7 @@ public class Listeners extends BaseTest implements ITestListener {
 		// TODO Auto-generated method stub
 		// super.onTestFailure(result);
 		//test.log(Status.FAIL, "Test Failed");
-		 extentTest.get().fail(result.getThrowable());////here take screenshot and attach it to report
+		 extentTest.get().fail(result.getThrowable());////here take screenshot and attach it to report//this will print error msg in report
 		try {
 			driver=(WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (Exception e1) {

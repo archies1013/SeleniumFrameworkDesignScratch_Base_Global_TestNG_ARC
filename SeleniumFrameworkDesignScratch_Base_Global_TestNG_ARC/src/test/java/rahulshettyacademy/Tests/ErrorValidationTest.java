@@ -15,6 +15,7 @@ import rahulshettyacadamy.PageObjects.CheckOutPage;
 import rahulshettyacadamy.PageObjects.ConfirmationPage;
 import rahulshettyacadamy.PageObjects.ProductCatalogue;
 import rahulshettyacademy.TestComponents.BaseTest;
+import rahulshettyacademy.TestComponents.Retry;
 
 public class ErrorValidationTest extends BaseTest{
 	/**Our scenario is here 
@@ -23,7 +24,7 @@ public class ErrorValidationTest extends BaseTest{
 	*Use different emaildid for positiev and negative tests is ggod for parallel testing
 	*/
 
-	@Test(groups = {"ErrorHandling"})
+	@Test(groups = {"ErrorHandling"},retryAnalyzer = Retry.class)
 	public void LoginErrorValidationTest() throws IOException, InterruptedException{
 		String productName = "ZARA COAT 3";
 		
@@ -40,7 +41,7 @@ public class ErrorValidationTest extends BaseTest{
 		 */
 		
 	}
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void ProductErrorValidationTest() throws IOException, InterruptedException{
 		String productName = "ZARA COAT 3";
 		
