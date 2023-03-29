@@ -80,17 +80,7 @@ public class PlaceOrderTest extends BaseTest{
 	//all these are Test Strategy
 	//If you want to run methods in parallel use like this --><suite parallel = 'tests' name="Suite">
 	
-	public String getScreenShot(String testCaseName) throws IOException
-	{
-		TakesScreenshot ts=(TakesScreenshot)driver;//this is how you have to cast driver to take a screenshot
-		File source=ts.getScreenshotAs(OutputType.FILE);
-		File file=new File(System.getProperty("user.dir")+ "//reports//" +testCaseName +".png");
-		FileUtils.copyFile(source, file);
-		return System.getProperty("user.dir")+ "//reports//" + testCaseName + ".png";
-		
-		//with the help of this utility we can create HTML Extent Reports
 	
-	}
 	//2nd method from DataProvider
 	@DataProvider
 	public Object[][] getData() throws IOException

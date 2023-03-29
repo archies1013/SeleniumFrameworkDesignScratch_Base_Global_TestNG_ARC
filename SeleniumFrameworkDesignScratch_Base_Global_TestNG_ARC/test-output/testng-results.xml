@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-24T18:33:38 EDT" name="Suite" finished-at="2023-03-24T18:34:30 EDT" duration-ms="52483">
+  <suite started-at="2023-03-28T23:47:49 EDT" name="Suite" finished-at="2023-03-28T23:48:36 EDT" duration-ms="47133">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.LoginErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@6f10d5b6]" name="LoginErrorValidationTest" class="rahulshettyacademy.Tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="PlaceOrderTest.PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@41fbdac4]" name="PlaceOrderTest" class="rahulshettyacademy.Tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" name="PlaceOrderTest" class="rahulshettyacademy.Tests.PlaceOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2023-03-24T18:33:38 EDT" name="ErrorValidationTest" finished-at="2023-03-24T18:33:38 EDT" duration-ms="6">
-    </test> <!-- ErrorValidationTest -->
-    <test started-at="2023-03-24T18:33:38 EDT" name="PlaceOrderTest" finished-at="2023-03-24T18:34:30 EDT" duration-ms="52483">
-      <class name="rahulshettyacademy.Tests.PlaceOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@41fbdac4]" started-at="2023-03-24T18:33:38 EDT" name="launchApplication" finished-at="2023-03-24T18:33:49 EDT" duration-ms="11301" status="PASS">
+    <test started-at="2023-03-28T23:47:49 EDT" name="ErrorValidationTest" finished-at="2023-03-28T23:48:32 EDT" duration-ms="42440">
+      <class name="rahulshettyacademy.Tests.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@6f10d5b6]" started-at="2023-03-28T23:47:49 EDT" name="launchApplication" finished-at="2023-03-28T23:48:04 EDT" duration-ms="14646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@41fbdac4]" started-at="2023-03-24T18:33:49 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-03-24T18:34:06 EDT" duration-ms="16232" status="PASS">
+        <test-method signature="LoginErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@6f10d5b6]" started-at="2023-03-28T23:48:04 EDT" name="LoginErrorValidationTest" finished-at="2023-03-28T23:48:07 EDT" duration-ms="2900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@6f10d5b6]" started-at="2023-03-28T23:48:07 EDT" name="tearDown" finished-at="2023-03-28T23:48:07 EDT" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@6f10d5b6]" started-at="2023-03-28T23:48:07 EDT" name="launchApplication" finished-at="2023-03-28T23:48:17 EDT" duration-ms="9923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@6f10d5b6]" started-at="2023-03-28T23:48:17 EDT" name="ProductErrorValidationTest" finished-at="2023-03-28T23:48:32 EDT" duration-ms="14665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@6f10d5b6]" started-at="2023-03-28T23:48:32 EDT" name="tearDown" finished-at="2023-03-28T23:48:32 EDT" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.Tests.ErrorValidationTest -->
+    </test> <!-- ErrorValidationTest -->
+    <test started-at="2023-03-28T23:47:49 EDT" name="PlaceOrderTest" finished-at="2023-03-28T23:48:36 EDT" duration-ms="47133">
+      <class name="rahulshettyacademy.Tests.PlaceOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" started-at="2023-03-28T23:47:49 EDT" name="launchApplication" finished-at="2023-03-28T23:48:01 EDT" duration-ms="11555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" started-at="2023-03-28T23:48:01 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-03-28T23:48:20 EDT" duration-ms="18912" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlaceOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@41fbdac4]" started-at="2023-03-24T18:34:06 EDT" name="tearDown" finished-at="2023-03-24T18:34:06 EDT" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" started-at="2023-03-28T23:48:20 EDT" name="tearDown" finished-at="2023-03-28T23:48:20 EDT" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@41fbdac4]" started-at="2023-03-24T18:34:06 EDT" name="launchApplication" finished-at="2023-03-24T18:34:15 EDT" duration-ms="9412" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" started-at="2023-03-28T23:48:20 EDT" name="launchApplication" finished-at="2023-03-28T23:48:30 EDT" duration-ms="9613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@41fbdac4]" started-at="2023-03-24T18:34:15 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-03-24T18:34:30 EDT" duration-ms="15174" status="PASS">
+        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" started-at="2023-03-28T23:48:30 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-03-28T23:48:36 EDT" duration-ms="6183" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -43,13 +72,110 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-ver-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-ver-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=111.0.5563.110)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [977f45bea61108354787e21d2e1cd422, clickElement {id=716af30e-2e1c-476c-b6fc-559db0964b6c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.110, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51845}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51845/devtoo..., se:cdpVersion: 111.0.5563.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (977f45bea61108354787e21d2e1cd422)] -> css selector: [routerlink*='cart']]
+Session ID: 977f45bea61108354787e21d2e1cd422]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ver-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-ver-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=111.0.5563.110)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [977f45bea61108354787e21d2e1cd422, clickElement {id=716af30e-2e1c-476c-b6fc-559db0964b6c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.110, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51845}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51845/devtoo..., se:cdpVersion: 111.0.5563.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (977f45bea61108354787e21d2e1cd422)] -> css selector: [routerlink*='cart']]
+Session ID: 977f45bea61108354787e21d2e1cd422
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at rahulshettyacademy.AbstractComponents.AbstractComponents.goToCartPage(AbstractComponents.java:76)
+at rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest(PlaceOrderTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlaceOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@41fbdac4]" started-at="2023-03-24T18:34:30 EDT" name="tearDown" finished-at="2023-03-24T18:34:30 EDT" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" started-at="2023-03-28T23:48:36 EDT" name="tearDown" finished-at="2023-03-28T23:48:36 EDT" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]" started-at="2023-03-28T23:48:36 EDT" name="OrderHistoryTest" finished-at="2023-03-28T23:48:36 EDT" depends-on-methods="rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418 depends on not successfully finished methods 
+[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418 depends on not successfully finished methods 
+[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@1ca3b418]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
       </class> <!-- rahulshettyacademy.Tests.PlaceOrderTest -->
     </test> <!-- PlaceOrderTest -->
   </suite> <!-- Suite -->

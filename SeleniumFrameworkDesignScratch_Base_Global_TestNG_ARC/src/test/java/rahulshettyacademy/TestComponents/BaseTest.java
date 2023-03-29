@@ -1,5 +1,7 @@
 package rahulshettyacademy.TestComponents;
 
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
 import java.io.File;
@@ -13,6 +15,8 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -84,6 +88,19 @@ public class BaseTest {
 		
 	}
 	
+	public String getScreenShot(String testCaseName, WebDriver driver) throws IOException
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;//this is how you have to cast driver to take a screenshot
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		File file=new File(System.getProperty("user.dir")+ "//reports//" +testCaseName +".png");
+		FileUtils.copyFile(source, file);
+		return System.getProperty("user.dir")+ "//reports//" + testCaseName + ".png";
+		
+		//with the help of this utility we can create HTML Extent Reports
+	
+	}
+	
+	
 	
 		@BeforeMethod(alwaysRun = true)
 		public LandingPage launchApplication() throws IOException
@@ -101,6 +118,7 @@ public class BaseTest {
 			
 			driver.close();
 		}
+		
 		
 				
 	}

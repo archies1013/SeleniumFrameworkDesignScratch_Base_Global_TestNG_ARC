@@ -3,7 +3,7 @@
 <suite parallel = 'tests' name="Suite">
 
 <listeners>
-<listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
+<listener class-name="rahulshettyacademy.TestComponents.Listeners1"/>
 </listeners>
 
   <test thread-count="10" name="PlaceOrderTest">
