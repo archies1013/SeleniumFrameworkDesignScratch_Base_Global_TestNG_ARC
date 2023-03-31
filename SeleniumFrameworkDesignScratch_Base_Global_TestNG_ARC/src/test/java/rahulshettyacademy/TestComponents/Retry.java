@@ -9,7 +9,7 @@ public class Retry implements IRetryAnalyzer{
 	public boolean retry(ITestResult result) {
 		// TODO Auto-generated method stub
 		int count = 0;
-		int maxTry = 3;
+		int maxTry = 1;
 		if (count<maxTry) 
 		{
 			count ++;

@@ -21,6 +21,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.idealized.Network.UserAgent;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -42,8 +43,11 @@ public class BaseTest {
 		Properties prop= new Properties();
 		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+ "//src//main//java//rahulshettyacademy//resources//GlobalData.properties");
 		prop.load(fis);
-		String browserName=prop.getProperty("browser");
 		
+		//using Ternary Operator here to choose browser from terminal
+		String browserName=System.getProperty("browser")!= null ? System.getProperty("browser") : prop.getProperty("browser");
+		//String browserName=prop.getProperty("browser");
+		prop.getProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 			//WebDriverManager.chromedriver().setup();
@@ -55,8 +59,8 @@ public class BaseTest {
 			
 			else if (browserName.equalsIgnoreCase("firefox")) 
 			{
-				//System.setProperty("webdriver.edge.driver", "/Users/archanasawant/Documents/geckodriver");
-				//driver = new EdgeDriver();
+				System.setProperty("webdriver.gecko.driver", "/Users/archanasawant/Documents/geckodriver");
+				driver = new FirefoxDriver();
 			}
 			
 			else if (browserName.equalsIgnoreCase("edge"))

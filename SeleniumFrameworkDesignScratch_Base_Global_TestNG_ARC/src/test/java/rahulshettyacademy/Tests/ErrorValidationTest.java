@@ -41,7 +41,7 @@ public class ErrorValidationTest extends BaseTest{
 		 */
 		
 	}
-	@Test(retryAnalyzer = Retry.class)
+	@Test
 	public void ProductErrorValidationTest() throws IOException, InterruptedException{
 		String productName = "ZARA COAT 3";
 		

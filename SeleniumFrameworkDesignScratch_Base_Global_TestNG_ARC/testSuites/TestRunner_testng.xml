@@ -6,13 +6,13 @@
 <listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
 </listeners>
 
-  <test thread-count="10" name="Place Order Test">
+  <test thread-count="10" name="PlaceOrderTest">
     <classes>
       <class name="rahulshettyacademy.Tests.PlaceOrderTest"/>
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="10" name="Error Validation Test">
+  <test thread-count="10" name="ErrorValidationTest">
     <classes>
       <class name="rahulshettyacademy.Tests.ErrorValidationTest"/>
     </classes>

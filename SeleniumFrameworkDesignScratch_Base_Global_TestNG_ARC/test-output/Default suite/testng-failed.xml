@@ -5,9 +5,9 @@
     <classes>
       <class name="rahulshettyacademy.Tests.ErrorValidationTest">
         <methods>
+          <include name="ProductErrorValidationTest"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="PlaceOrderTest"/>
         </methods>
       </class> <!-- rahulshettyacademy.Tests.ErrorValidationTest -->
     </classes>

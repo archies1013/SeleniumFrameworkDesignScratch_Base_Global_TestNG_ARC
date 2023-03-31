@@ -4,6 +4,17 @@
   <listeners>
     <listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="ErrorValidationTest(failed)">
+    <classes>
+      <class name="rahulshettyacademy.Tests.ErrorValidationTest">
+        <methods>
+          <include name="ProductErrorValidationTest"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- rahulshettyacademy.Tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- ErrorValidationTest(failed) -->
   <test thread-count="5" parallel="tests" name="PlaceOrderTest(failed)">
     <classes>
       <class name="rahulshettyacademy.Tests.PlaceOrderTest">
