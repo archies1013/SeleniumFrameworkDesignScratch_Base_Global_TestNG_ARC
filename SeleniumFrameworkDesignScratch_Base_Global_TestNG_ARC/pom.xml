@@ -20,6 +20,20 @@
 
   <dependencies>
     
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.11.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.11.2</version>
+</dependency>
+
     
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
@@ -67,9 +81,7 @@
     <version>5.0.9</version>
 </dependency>
 
-    
-    
-    
+
   </dependencies>
   
   <profiles>
@@ -85,7 +97,7 @@
         <version>3.0.0</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testSuites/TestRunner_testng.xml</suiteXmlFile>
+            <suiteXmlFile>testSuites/TestRunner.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -105,7 +117,7 @@
         <version>3.0.0</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testSuites/Purchase_testng2.xml</suiteXmlFile>
+            <suiteXmlFile>testSuites/Purchase.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -125,8 +137,28 @@
         <version>3.0.0</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testSuites/ErrorValidationTests_testng.xml</suiteXmlFile>
+            <suiteXmlFile>testSuites/ErrorValidation.xml</suiteXmlFile>
           </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+      </pluginManagement>
+      </build>
+	</profile>
+	
+	<profile>
+		<id>CucumberTest</id>
+		<build>
+   		 <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+     	 <plugins>		  
+		  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <includes>
+            <include>**/TestNGTestRunner.java</include>
+          </includes>
         </configuration>
       </plugin>
       </plugins>
@@ -149,10 +181,19 @@
         <version>3.0.0</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>TestRunner.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
+      
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
 		  
 		  
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->

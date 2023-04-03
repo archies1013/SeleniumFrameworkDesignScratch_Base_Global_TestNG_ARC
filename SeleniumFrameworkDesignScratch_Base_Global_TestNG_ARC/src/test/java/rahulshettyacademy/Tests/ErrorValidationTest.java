@@ -30,7 +30,7 @@ public class ErrorValidationTest extends BaseTest{
 		
 		landingPage.loginApplication("sawantarchana110@gmail.com", "Mullen@1235");//loginit
 		landingPage.getErrorMessage();//now we need to put Assertion here to validate error message
-		AssertJUnit.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 		
 		/**if you gone in blinkout while catching the locator we can check with out developer or you use selector hub plugin and copy
 		 * xpath and use it, below locator we cannot catch that why we use SelectorHub Plugin to catch relative xpath

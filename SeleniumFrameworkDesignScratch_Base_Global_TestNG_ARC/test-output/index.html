@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>TestRunner_testng.xml</span>
+                    <span>TestRunner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -168,14 +168,35 @@
                   </a> <!-- PlaceOrderTest({password=Mullen@123, email=sawantarchana110@gmail.com, productName=ZARA COAT 3}) -->
                   <span class="method-name">PlaceOrderTest</span>
                   <span class="parameters">({password=Mullen@123, email=sawantarchana110@gmail.com, productName=ZARA COAT 3})</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest(PlaceOrderTest.java:58)
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7da3578f13fe12a177f9197bd155904b, clickElement {id=ce48ec87-d8d4-4bda-90bb-b3708de9f733}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51145/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (7da3578f13fe12a177f9197bd155904b)] -&gt; css selector: .action__submit]
+Session ID: 7da3578f13fe12a177f9197bd155904b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at rahulshettyacadamy.PageObjects.CheckOutPage.submitOrder(CheckOutPage.java:48)
+	at rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest(PlaceOrderTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 21 stack frames
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -192,15 +213,15 @@
                   <a name="ProductErrorValidationTest">
                   </a> <!-- ProductErrorValidationTest -->
                   <span class="method-name">ProductErrorValidationTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-tav-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1188, 26). Other element would receive the click: &lt;div _ngcontent-tav-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-jol-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1188, 26). Other element would receive the click: &lt;div _ngcontent-jol-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=111.0.5563.146)
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7c5f5b88e4c8854eaccf7d8c1775631b, clickElement {id=be5968a1-df37-4bd9-8e0b-1d95c22b2b2e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51701/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (7c5f5b88e4c8854eaccf7d8c1775631b)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
-Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
+Command: [19ce3ad35a62483f44140a84346a07de, clickElement {id=be7bfca8-6e4e-42d4-a3ad-21697a14d0cc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51178/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (19ce3ad35a62483f44140a84346a07de)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: 19ce3ad35a62483f44140a84346a07de
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -236,8 +257,8 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
                   <a name="OrderHistoryTest">
                   </a> <!-- OrderHistoryTest -->
                   <span class="method-name">OrderHistoryTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@7ef82753 depends on not successfully finished methods 
-[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]
+                  <div class="stack-trace">java.lang.Throwable: Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@79e4c792 depends on not successfully finished methods 
+[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -283,7 +304,7 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/archanasawant/git/SeleniumFrameworkDesignScratch_Base_Global_TestNG_ARC/SeleniumFrameworkDesignScratch_Base_Global_TestNG_ARC/testSuites/TestRunner_testng.xml</span>
+            <span class="header-content">/Users/archanasawant/git/SeleniumFrameworkDesignScratch_Base_Global_TestNG_ARC/SeleniumFrameworkDesignScratch_Base_Global_TestNG_ARC/testSuites/TestRunner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -293,12 +314,12 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
   &lt;listeners&gt;
     &lt;listener class-name=&quot;rahulshettyacademy.TestComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;PlaceOrderTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;PlaceOrderTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;rahulshettyacademy.Tests.PlaceOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- PlaceOrderTest --&gt;
-  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;ErrorValidationTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ErrorValidationTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;rahulshettyacademy.Tests.ErrorValidationTest&quot;/&gt;
     &lt;/classes&gt;
@@ -363,19 +384,19 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PlaceOrderTest')
 data.setCell(0, 2, 'rahulshettyacademy.Tests.PlaceOrderTest')
-data.setCell(0, 3, 18590);
+data.setCell(0, 3, 18379);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'PlaceOrderTest')
 data.setCell(1, 2, 'rahulshettyacademy.Tests.PlaceOrderTest')
-data.setCell(1, 3, 14733);
+data.setCell(1, 3, 16504);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ProductErrorValidationTest')
 data.setCell(2, 2, 'rahulshettyacademy.Tests.ErrorValidationTest')
-data.setCell(2, 3, 6276);
+data.setCell(2, 3, 8690);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'LoginErrorValidationTest')
 data.setCell(3, 2, 'rahulshettyacademy.Tests.ErrorValidationTest')
-data.setCell(3, 3, 2991);
+data.setCell(3, 3, 3410);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'OrderHistoryTest')
 data.setCell(4, 2, 'rahulshettyacademy.Tests.PlaceOrderTest')
@@ -420,67 +441,67 @@ return data;
               <div class="chronological-class-name">rahulshettyacademy.Tests.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">156 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PlaceOrderTest({password=Mullen@123, email=sawantarchana110@gmail.com, productName=ZARA COAT 3})</span>
+                <span class="method-start">16281 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">rahulshettyacademy.Tests.ErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LoginErrorValidationTest</span>
-                <span class="method-start">12739 ms</span>
+                <span class="method-start">16281 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">rahulshettyacademy.Tests.PlaceOrderTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">PlaceOrderTest({password=Mullen@123, email=sawantarchana110@gmail.com, productName=ZARA COAT 3})</span>
-                <span class="method-start">14721 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">rahulshettyacademy.Tests.ErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15732 ms</span>
+                <span class="method-start">19695 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">15898 ms</span>
+                <span class="method-start">19854 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ProductErrorValidationTest</span>
-                <span class="method-start">25789 ms</span>
+                <span class="method-start">30355 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">32530 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">rahulshettyacademy.Tests.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33531 ms</span>
+                <span class="method-start">35139 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">33681 ms</span>
+                <span class="method-start">35319 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahulshettyacademy.Tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39728 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahulshettyacademy.Tests.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">PlaceOrderTest({password=Mullen@123, email=archies1013@gmail.com, productName=ADIDAS ORIGINAL})</span>
-                <span class="method-start">47363 ms</span>
+                <span class="method-start">45875 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62097 ms</span>
+                <span class="method-start">62380 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">OrderHistoryTest</span>
-                <span class="method-start">62269 ms</span>
+                <span class="method-start">62523 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

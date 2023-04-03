@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar. 30, 2023 05:04:46 p.m.</span></a>
+<a href="#"><span class="badge badge-primary">Apr. 3, 2023 01:40:53 p.m.</span></a>
 </li>
 </ul>
 </div>
@@ -80,54 +80,14 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">LoginErrorValidationTest</p>
-            <p class="text-sm">
-              <span>5:04:59 p.m.</span> / <span>00:00:02:981</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">LoginErrorValidationTest</h5>
-<span class='badge badge-success'>03.30.2023 5:04:59 p.m.</span>
-<span class='badge badge-danger'>03.30.2023 5:05:02 p.m.</span>
-<span class='badge badge-default'>00:00:02:981</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:05:02 p.m.</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">PlaceOrderTest</p>
             <p class="text-sm">
-              <span>5:05:01 p.m.</span> / <span>00:00:18:809</span>
+              <span>1:41:10 p.m.</span> / <span>00:00:18:843</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -136,10 +96,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">PlaceOrderTest</h5>
-<span class='badge badge-success'>03.30.2023 5:05:01 p.m.</span>
-<span class='badge badge-danger'>03.30.2023 5:05:19 p.m.</span>
-<span class='badge badge-default'>00:00:18:809</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-success'>04.03.2023 1:41:10 p.m.</span>
+<span class='badge badge-danger'>04.03.2023 1:41:29 p.m.</span>
+<span class='badge badge-default'>00:00:18:843</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -154,14 +114,40 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:05:19 p.m.</td>
+        <td>1:41:28 p.m.</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest(PlaceOrderTest.java:58)
+          <textarea readonly class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7da3578f13fe12a177f9197bd155904b, clickElement {id=ce48ec87-d8d4-4bda-90bb-b3708de9f733}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51145/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (7da3578f13fe12a177f9197bd155904b)] -> css selector: .action__submit]
+Session ID: 7da3578f13fe12a177f9197bd155904b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at rahulshettyacadamy.PageObjects.CheckOutPage.submitOrder(CheckOutPage.java:48)
+	at rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest(PlaceOrderTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,6 +179,46 @@
 </div>
           </div>
         </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginErrorValidationTest</p>
+            <p class="text-sm">
+              <span>1:41:10 p.m.</span> / <span>00:00:03:400</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginErrorValidationTest</h5>
+<span class='badge badge-success'>04.03.2023 1:41:10 p.m.</span>
+<span class='badge badge-danger'>04.03.2023 1:41:13 p.m.</span>
+<span class='badge badge-default'>00:00:03:400</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:41:13 p.m.</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
         <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
@@ -200,7 +226,7 @@
           <div class="test-detail">
             <p class="name">ProductErrorValidationTest</p>
             <p class="text-sm">
-              <span>5:05:12 p.m.</span> / <span>00:00:06:738</span>
+              <span>1:41:24 p.m.</span> / <span>00:00:09:369</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -209,9 +235,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">ProductErrorValidationTest</h5>
-<span class='badge badge-success'>03.30.2023 5:05:12 p.m.</span>
-<span class='badge badge-danger'>03.30.2023 5:05:18 p.m.</span>
-<span class='badge badge-default'>00:00:06:738</span>
+<span class='badge badge-success'>04.03.2023 1:41:24 p.m.</span>
+<span class='badge badge-danger'>04.03.2023 1:41:33 p.m.</span>
+<span class='badge badge-default'>00:00:09:369</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -227,17 +253,17 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:05:18 p.m.</td>
+        <td>1:41:33 p.m.</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-tav-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-tav-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-jol-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-jol-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
   (Session info: chrome=111.0.5563.146)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7c5f5b88e4c8854eaccf7d8c1775631b, clickElement {id=be5968a1-df37-4bd9-8e0b-1d95c22b2b2e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51701/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (7c5f5b88e4c8854eaccf7d8c1775631b)] -> css selector: [routerlink*='cart']]
-Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
+Command: [19ce3ad35a62483f44140a84346a07de, clickElement {id=be7bfca8-6e4e-42d4-a3ad-21697a14d0cc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51178/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (19ce3ad35a62483f44140a84346a07de)] -> css selector: [routerlink*='cart']]
+Session ID: 19ce3ad35a62483f44140a84346a07de
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -298,7 +324,7 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
           <div class="test-detail">
             <p class="name">PlaceOrderTest</p>
             <p class="text-sm">
-              <span>5:05:33 p.m.</span> / <span>00:00:14:732</span>
+              <span>1:41:40 p.m.</span> / <span>00:00:16:502</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -307,9 +333,9 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">PlaceOrderTest</h5>
-<span class='badge badge-success'>03.30.2023 5:05:33 p.m.</span>
-<span class='badge badge-danger'>03.30.2023 5:05:48 p.m.</span>
-<span class='badge badge-default'>00:00:14:732</span>
+<span class='badge badge-success'>04.03.2023 1:41:40 p.m.</span>
+<span class='badge badge-danger'>04.03.2023 1:41:56 p.m.</span>
+<span class='badge badge-default'>00:00:16:502</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -321,7 +347,7 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:05:48 p.m.</td>
+        <td>1:41:56 p.m.</td>
         <td>
           Test Passed
         </td>
@@ -338,7 +364,7 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
           <div class="test-detail">
             <p class="name">OrderHistoryTest</p>
             <p class="text-sm">
-              <span>5:05:48 p.m.</span> / <span>00:00:00:000</span>
+              <span>1:41:56 p.m.</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -347,8 +373,8 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">OrderHistoryTest</h5>
-<span class='badge badge-success'>03.30.2023 5:05:48 p.m.</span>
-<span class='badge badge-danger'>03.30.2023 5:05:48 p.m.</span>
+<span class='badge badge-success'>04.03.2023 1:41:56 p.m.</span>
+<span class='badge badge-danger'>04.03.2023 1:41:56 p.m.</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -398,7 +424,7 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:05:12 p.m.</td>
+<td>13:41:24 p.m.</td>
 <td>
 <a href="#" class="linked" test-id='3' id='3'>ProductErrorValidationTest</a>
 </td>
@@ -412,12 +438,12 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.StaleElementReferenceException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -431,9 +457,9 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:05:01 p.m.</td>
+<td>13:41:10 p.m.</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>PlaceOrderTest</a>
+<a href="#" class="linked" test-id='1' id='1'>PlaceOrderTest</a>
 </td>
 </tr>
 </tbody>
@@ -453,13 +479,13 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar. 30, 2023 05:04:46 p.m.</h3>
+<h3>Apr. 3, 2023 01:40:53 p.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar. 30, 2023 05:05:48 p.m.</h3>
+<h3>Apr. 3, 2023 01:41:56 p.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -529,7 +555,7 @@ Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
 </div></div>
 <script>
 var timeline = {
-"LoginErrorValidationTest":2.981,"PlaceOrderTest":18.809,"ProductErrorValidationTest":6.738,"PlaceOrderTest":14.732,"OrderHistoryTest":0
+"PlaceOrderTest":18.843,"LoginErrorValidationTest":3.4,"ProductErrorValidationTest":9.369,"PlaceOrderTest":16.502,"OrderHistoryTest":0
 };
 </script>
 <div class="row">

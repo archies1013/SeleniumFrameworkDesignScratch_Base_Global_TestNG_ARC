@@ -15,6 +15,7 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -48,13 +49,18 @@ public class BaseTest {
 		String browserName=System.getProperty("browser")!= null ? System.getProperty("browser") : prop.getProperty("browser");
 		//String browserName=prop.getProperty("browser");
 		prop.getProperty("browser");
-		if(browserName.equalsIgnoreCase("chrome"))
+		if(browserName.contains("chrome"))
 		{
 			//WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized");
 			options.addArguments("--remote-allow-origins=*");
+			if(browserName.contains("headless")) 
+			{
+			options.addArguments("headless");
+			}
 			driver = new ChromeDriver(options);
+			//driver.manage().window().setSize(new Dimension(1440, 900));//for full screen
 		}	
 			
 			else if (browserName.equalsIgnoreCase("firefox")) 

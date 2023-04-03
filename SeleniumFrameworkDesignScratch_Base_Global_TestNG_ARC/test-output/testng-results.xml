@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-30T17:04:46 EDT" name="Suite" finished-at="2023-03-30T17:05:48 EDT" duration-ms="62282">
+  <suite started-at="2023-04-03T13:40:54 EDT" name="Suite" finished-at="2023-04-03T13:41:56 EDT" duration-ms="62557">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationTest.LoginErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@1972e513]" name="LoginErrorValidationTest" class="rahulshettyacademy.Tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.LoginErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@4f32a3ad]" name="LoginErrorValidationTest" class="rahulshettyacademy.Tests.ErrorValidationTest"/>
       </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="PlaceOrderTest.PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" name="PlaceOrderTest" class="rahulshettyacademy.Tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" name="PlaceOrderTest" class="rahulshettyacademy.Tests.PlaceOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2023-03-30T17:04:46 EDT" name="ErrorValidationTest" finished-at="2023-03-30T17:05:18 EDT" duration-ms="32672">
+    <test started-at="2023-04-03T13:40:54 EDT" name="ErrorValidationTest" finished-at="2023-04-03T13:41:34 EDT" duration-ms="39936">
       <class name="rahulshettyacademy.Tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@1972e513]" started-at="2023-03-30T17:04:46 EDT" name="launchApplication" finished-at="2023-03-30T17:04:59 EDT" duration-ms="12738" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@4f32a3ad]" started-at="2023-04-03T13:40:54 EDT" name="launchApplication" finished-at="2023-04-03T13:41:10 EDT" duration-ms="16271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@1972e513]" started-at="2023-03-30T17:04:59 EDT" name="LoginErrorValidationTest" finished-at="2023-03-30T17:05:02 EDT" duration-ms="2991" status="PASS">
+        <test-method signature="LoginErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@4f32a3ad]" started-at="2023-04-03T13:41:10 EDT" name="LoginErrorValidationTest" finished-at="2023-04-03T13:41:13 EDT" duration-ms="3410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@1972e513]" started-at="2023-03-30T17:05:02 EDT" name="tearDown" finished-at="2023-03-30T17:05:02 EDT" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@4f32a3ad]" started-at="2023-04-03T13:41:13 EDT" name="tearDown" finished-at="2023-04-03T13:41:14 EDT" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@1972e513]" started-at="2023-03-30T17:05:02 EDT" name="launchApplication" finished-at="2023-03-30T17:05:12 EDT" duration-ms="9891" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@4f32a3ad]" started-at="2023-04-03T13:41:14 EDT" name="launchApplication" finished-at="2023-04-03T13:41:24 EDT" duration-ms="10500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@1972e513]" started-at="2023-03-30T17:05:12 EDT" name="ProductErrorValidationTest" finished-at="2023-03-30T17:05:18 EDT" duration-ms="6276" status="FAIL">
+        <test-method signature="ProductErrorValidationTest()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@4f32a3ad]" started-at="2023-04-03T13:41:24 EDT" name="ProductErrorValidationTest" finished-at="2023-04-03T13:41:33 EDT" duration-ms="8690" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <button _ngcontent-tav-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-tav-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+              <![CDATA[element click intercepted: Element <button _ngcontent-jol-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-jol-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
   (Session info: chrome=111.0.5563.146)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7c5f5b88e4c8854eaccf7d8c1775631b, clickElement {id=be5968a1-df37-4bd9-8e0b-1d95c22b2b2e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51701/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (7c5f5b88e4c8854eaccf7d8c1775631b)] -> css selector: [routerlink*='cart']]
-Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b]]>
+Command: [19ce3ad35a62483f44140a84346a07de, clickElement {id=be7bfca8-6e4e-42d4-a3ad-21697a14d0cc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51178/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (19ce3ad35a62483f44140a84346a07de)] -> css selector: [routerlink*='cart']]
+Session ID: 19ce3ad35a62483f44140a84346a07de]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-tav-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-tav-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-jol-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1188, 26). Other element would receive the click: <div _ngcontent-jol-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
   (Session info: chrome=111.0.5563.146)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7c5f5b88e4c8854eaccf7d8c1775631b, clickElement {id=be5968a1-df37-4bd9-8e0b-1d95c22b2b2e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51701/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (7c5f5b88e4c8854eaccf7d8c1775631b)] -> css selector: [routerlink*='cart']]
-Session ID: 7c5f5b88e4c8854eaccf7d8c1775631b
+Command: [19ce3ad35a62483f44140a84346a07de, clickElement {id=be7bfca8-6e4e-42d4-a3ad-21697a14d0cc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51178/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (19ce3ad35a62483f44140a84346a07de)] -> css selector: [routerlink*='cart']]
+Session ID: 19ce3ad35a62483f44140a84346a07de
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -102,19 +102,19 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@1972e513]" started-at="2023-03-30T17:05:18 EDT" name="tearDown" finished-at="2023-03-30T17:05:18 EDT" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationTest@4f32a3ad]" started-at="2023-04-03T13:41:33 EDT" name="tearDown" finished-at="2023-04-03T13:41:34 EDT" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- rahulshettyacademy.Tests.ErrorValidationTest -->
     </test> <!-- ErrorValidationTest -->
-    <test started-at="2023-03-30T17:04:46 EDT" name="PlaceOrderTest" finished-at="2023-03-30T17:05:48 EDT" duration-ms="62282">
+    <test started-at="2023-04-03T13:40:54 EDT" name="PlaceOrderTest" finished-at="2023-04-03T13:41:56 EDT" duration-ms="62557">
       <class name="rahulshettyacademy.Tests.PlaceOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" started-at="2023-03-30T17:04:46 EDT" name="launchApplication" finished-at="2023-03-30T17:05:01 EDT" duration-ms="14614" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" started-at="2023-04-03T13:40:54 EDT" name="launchApplication" finished-at="2023-04-03T13:41:10 EDT" duration-ms="16115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" started-at="2023-03-30T17:05:01 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-03-30T17:05:19 EDT" duration-ms="18590" status="FAIL">
+        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" started-at="2023-04-03T13:41:10 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-04-03T13:41:28 EDT" duration-ms="18379" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -122,17 +122,52 @@ at java.base/java.lang.Thread.run(Thread.java:833)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7da3578f13fe12a177f9197bd155904b, clickElement {id=ce48ec87-d8d4-4bda-90bb-b3708de9f733}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51145/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (7da3578f13fe12a177f9197bd155904b)] -> css selector: .action__submit]
+Session ID: 7da3578f13fe12a177f9197bd155904b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest(PlaceOrderTest.java:58)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7da3578f13fe12a177f9197bd155904b, clickElement {id=ce48ec87-d8d4-4bda-90bb-b3708de9f733}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/hp/mjygw40d1y1...}, goog:chromeOptions: {debuggerAddress: localhost:51145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51145/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (7da3578f13fe12a177f9197bd155904b)] -> css selector: .action__submit]
+Session ID: 7da3578f13fe12a177f9197bd155904b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at rahulshettyacadamy.PageObjects.CheckOutPage.submitOrder(CheckOutPage.java:48)
+at rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest(PlaceOrderTest.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,19 +192,19 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlaceOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" started-at="2023-03-30T17:05:19 EDT" name="tearDown" finished-at="2023-03-30T17:05:19 EDT" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" started-at="2023-04-03T13:41:29 EDT" name="tearDown" finished-at="2023-04-03T13:41:29 EDT" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" started-at="2023-03-30T17:05:19 EDT" name="launchApplication" finished-at="2023-03-30T17:05:33 EDT" duration-ms="13682" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" started-at="2023-04-03T13:41:29 EDT" name="launchApplication" finished-at="2023-04-03T13:41:40 EDT" duration-ms="10554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" started-at="2023-03-30T17:05:33 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-03-30T17:05:48 EDT" duration-ms="14733" status="PASS">
+        <test-method signature="PlaceOrderTest(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" started-at="2023-04-03T13:41:40 EDT" name="PlaceOrderTest" data-provider="getData" finished-at="2023-04-03T13:41:56 EDT" duration-ms="16504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -180,19 +215,19 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlaceOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" started-at="2023-03-30T17:05:48 EDT" name="tearDown" finished-at="2023-03-30T17:05:48 EDT" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" started-at="2023-04-03T13:41:56 EDT" name="tearDown" finished-at="2023-04-03T13:41:56 EDT" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]" started-at="2023-03-30T17:05:48 EDT" name="OrderHistoryTest" finished-at="2023-03-30T17:05:48 EDT" depends-on-methods="rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest" duration-ms="0" status="SKIP">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]" started-at="2023-04-03T13:41:56 EDT" name="OrderHistoryTest" finished-at="2023-04-03T13:41:56 EDT" depends-on-methods="rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@7ef82753 depends on not successfully finished methods 
-[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]]]>
+              <![CDATA[Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@79e4c792 depends on not successfully finished methods 
+[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@7ef82753 depends on not successfully finished methods 
-[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@7ef82753]
+              <![CDATA[java.lang.Throwable: Method rahulshettyacademy.Tests.PlaceOrderTest.OrderHistoryTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@79e4c792 depends on not successfully finished methods 
+[rahulshettyacademy.Tests.PlaceOrderTest.PlaceOrderTest() on instance rahulshettyacademy.Tests.PlaceOrderTest@79e4c792]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
